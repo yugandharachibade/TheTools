@@ -4,12 +4,14 @@ import java.util.Scanner;
 
 public class GreaterNumber {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		Scanner s= new Scanner(System.in);
+		Scanner sc;
+		sc= new Scanner(System.in);
 		System.out.println("Enter any 3 number:");
-		int a=s.nextInt();
-		int b=s.nextInt();
-		int c=s.nextInt();
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
 		if (a>b && a>c) {
 			System.out.println(+a+" is greater number");}
 		else if(b>c && b>a)

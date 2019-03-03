@@ -4,29 +4,28 @@ public class SameNoInArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	int a[]={10,40,10,40,20};
+	int a[]={10,40,40,20,40};
 	int c=0;
-	for(int i=0;i<=4;i++)
+	for(int i=0;i<a.length;i++)
 	{
-	   for(int j=i+1;j<4;j++)
+	   for(int j=0;j<a.length;j++)
 	   {
-		   System.out.println();
 		   if(a[i]==a[j])
 		   {
-			   c++;
+			   c=c+1;
 		   }
 	   }
+	
 	   if(c>0)
 	   {
-	   System.out.println(+a[i]+"is reprated :" +c);   
+	   System.out.println(+a[i]+"is reprated :" +c+" times");  
+	   
 	   }
-	   else
-	   {
-		   System.out.println(+a[i]+"is reprated :1");   
-	   }
+	
+	   c=0;
 	}
 	
-		
+	}	
 	}
 
-}
+
